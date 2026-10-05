@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- ===== CSS EXTERNO ===== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>EIC,lda</title>
+</head> 
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar transparent" id="navbar">
+    <a href="#" class="navbar-logo">
+        <img src="images/logo.png" alt="Logo" class="logo-img">
+    </a>
+    <div class="navbar-nav" id="navbarNav">
+        <a href="#home">Início</a>
+        <a href="#servicos">Nossos Serviços</a>
+        <a href="#manutencao-industrial">Manutenção Industrial</a>
+        <a href="#desenho-estrutural"> Desenho Estrutural</a>
+        <a href="#fabrico-estruturas">Fabrico de Estruturas</a>
+        <a href="#construcao-civil">Construção Civil</a>
+        <a href="#agricultura">Agricultura</a>
+        <a href="#classes">Serviços Feitos</a>
+        <a href="#contactos">Contactos</a>
+    </div>
+</nav>
+
+<!-- ==================== HERO SECTION ==================== -->
+<section id="home" class="hero-container">
+    <div class="left-section" style="
+        background-image: url('images/rightsidelogo.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 80px 5% 40px;
+        position: relative;
+    ">
+        <!-- Overlay para escurecer a imagem e manter legibilidade -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        "></div>
+        
+        <div class="content" style="
+            position: relative;
+            z-index: 10;
+            max-width: 600px;
+            width: 100%;
+        ">
+            <h1 style="
+                color: white;
+                font-size: clamp(1.5rem, 5vw, 3rem);
+                font-weight: 900;
+                line-height: 1.1;
+                margin-bottom: 15px;
+            ">
+                <br><span class="highlight" style="color: #AF9C03;">Engenharia Industrial e Consultoria, LDA</span>
+            </h1>
+            <p class="subtitle" style="
+                color: #FFE484;
+                font-size: clamp(0.9rem, 4vw, 1.3rem);
+                margin-bottom: 10px;
+                font-weight: 600;
+            ">
+                PROJECTANDO & CONSTRUINDO<br>COM QUALIDADE E TECNOLOGIA
+            </p>
+            <p class="description" style="
+                color: rgba(255, 255, 255, 0.85);
+                font-size: clamp(0.85rem, 3.5vw, 1rem);
+                line-height: 1.6;
+                max-width: 500px;
+                margin-bottom: 25px;
+            ">
+                Prestar, instalar, fornecer e assegurar assistência técnica em Serviços de Engenharia com rigor, qualidade, justiça e cumprimento absoluto dos prazos estabelecidos.
+            </p>
+            <a href="#contactos" class="cta-button" style="
+                background: #AF9C03;
+                color: white;
+                border: none;
+                padding: 12px 28px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-size: clamp(0.8rem, 3.5vw, 1rem);
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 4px;
+            ">
+                AGENDE UMA VISITA
+            </a>
+        </div>
+
+        <!-- ÍCONES SOCIAIS -->
+        <div class="meus-icones-sociais" style="
+            position: absolute;
+            bottom: 30px;
+            left: 5%;
+            display: flex;
+            gap: 30px;
+            z-index: 999999 !important;
+            pointer-events: auto !important;
+        ">
+            <a href="https://www.facebook.com/profile.php?id=61592017178721&mibextid=rS40aB7S9Ucbxw6v" 
+               target="_blank" 
+               class="meu-icone" 
+               title="Facebook"
+               style="
+                   display: inline-block;
+                   color: #ffffff;
+                   font-size: 1.4rem;
+                   opacity: 0.7;
+                   transition: all 0.3s ease;
+                   text-decoration: none;
+                   background: none;
+                   border: none;
+                   padding: 0;
+                   margin: 0;
+                   cursor: pointer;
+               ">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/eic_lda/" 
+               target="_blank" 
+               class="meu-icone" 
+               title="Instagram"
+               style="
+                   display: inline-block;
+                   color: #ffffff;
+                   font-size: 1.4rem;
+                   opacity: 0.7;
+                   transition: all 0.3s ease;
+                   text-decoration: none;
+                   background: none;
+                   border: none;
+                   padding: 0;
+                   margin: 0;
+                   cursor: pointer;
+               ">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/eic-lda-245866409" 
+               target="_blank" 
+               class="meu-icone" 
+               title="LinkedIn"
+               style="
+                   display: inline-block;
+                   color: #ffffff;
+                   font-size: 1.4rem;
+                   opacity: 0.7;
+                   transition: all 0.3s ease;
+                   text-decoration: none;
+                   background: none;
+                   border: none;
+                   padding: 0;
+                   margin: 0;
+                   cursor: pointer;
+               ">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    
+    <div class="right-section">
+        <div class="carrossel-container">
+            <div class="carrossel-slides" id="carrosselSlides">
+                <div class="carrossel-slide active" style="background-image: url('images/ChatGPT Image 2_05_2026, 15_08_20.png');"></div>
+                <div class="carrossel-slide" style="background-image: url('images/ChatGPT Image May 2, 2026, 03_12_40 PM.png');"></div>
+                <div class="carrossel-slide" style="background-image: url('images/ChatGPT Image May 2, 2026, 03_16_34 PM.png');"></div>
+                <div class="carrossel-slide" style="background-image: url('images/ChatGPT Image May 2, 2026, 03_18_23 PM.png');"></div>
+                <div class="carrossel-slide" style="background-image: url('images/ChatGPT Image May 2, 2026, 03_21_23 PM.png');"></div>
+            </div>
+            <button class="carrossel-btn carrossel-prev" id="carrosselPrevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="carrossel-btn carrossel-next" id="carrosselNextBtn"><i class="fas fa-chevron-right"></i></button>
+            <div class="carrossel-indicators" id="carrosselIndicators"></div>
+        </div>
+    </div>
+</section>
+<!-- ==================== SEÇÃO NOSSOS SERVIÇOS ESPECIALIZADOS ==================== -->
+<section id="servicos" class="services-showcase-section">
+    <div class="services-container">
+        <div class="services-header">
+            <div class="services-badge"><i class="fas fa-cogs"></i> O que fazemos de melhor</div>
+            <h2 class="services-title">Nossos Serviços <span style="color: #AF9C03;">Especializados</span></h2>
+            <p class="services-subtitle">Oferecemos soluções completas e personalizadas para atender às necessidades da sua indústria, com tecnologia de ponta e profissionais altamente qualificados.</p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Serviço 1: Manutenção Industrial -->
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <div class="service-icon"><i class="fas fa-industry"></i></div>
+                </div>
+                <h3 class="service-title">Manutenção Industrial</h3>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i>ELETRICIDADE</li>
+                    <li><i class="fas fa-check-circle"></i>MECÂNICA</li>
+                    <li><i class="fas fa-check-circle"></i>MONITORAMENTO</li>
+                    <li><i class="fas fa-check-circle"></i>COMBUSTÍVEIS E GÁS</li>
+                </ul>
+       
+            </div>
+            
+            <!-- Serviço 2: Desenho Estrutural -->
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
+                </div>
+                <h3 class="service-title">Desenho Estrutural</h3>
+                <p class="service-description">Projectos de engenharia detalhados em AutoCAD, SolidWorks e outras plataformas.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> AutoCAD 2D/3D</li>
+                    <li><i class="fas fa-check-circle"></i> SolidWorks</li>
+                </ul>
+       
+            </div>
+            
+            <!-- Serviço 3: Fabrico de Estruturas -->
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                </div>
+                <h3 class="service-title">Fabrico de Estruturas</h3>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> ARMAZÉNS E COBERTURAS</li>
+                    <li><i class="fas fa-check-circle"></i> ESTRUTURAS INDUSTRIAIS</li>
+                    <li><i class="fas fa-check-circle"></i> PRODUÇÃO E MANUTENÇÃO</li>
+                </ul>
+        
+            </div>
+            
+            <!-- Serviço 4: Construção Civil -->
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+                </div>
+                <h3 class="service-title">Construção Civil</h3>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> Gestão de Projectos</li>
+                    <li><i class="fas fa-check-circle"></i> Remodelações</li>
+                </ul>
+             
+            </div>
+
+            <!-- Serviço 5: Agricultura -->
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <div class="service-icon"><i class="fas fa-tractor"></i></div>
+                </div>
+                <h3 class="service-title">Agricultura</h3>
+                <p class="service-description">Fornecimento de insumos e equipamentos de agroprocessamento, sistemas de estufas e rega.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> Insumos & Equipamentos</li>
+                    <li><i class="fas fa-check-circle"></i> Sistemas de Estufas</li>
+                </ul>
+             
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- ==================== SEÇÃO MANUTENÇÃO INDUSTRIAL ==================== -->
+<section id="manutencao-industrial" class="industrial-maintenance-section" style="
+    background-image: url('images/monitoramento.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+">
+    <div class="maintenance-overlay"></div>
+    <div class="maintenance-container">
+        <div class="maintenance-header">
+            <div class="maintenance-badge"><i class="fas fa-tools"></i> Soluções Técnicas Avançadas</div>
+            <h2 class="maintenance-title">Manutenção <span style="color: #AF9C03;">Industrial</span></h2>
+            <p class="maintenance-subtitle">Serviços especializados para garantir a máxima eficiência, segurança e disponibilidade dos seus equipamentos industriais</p>
+        </div>
+
+        <div class="maintenance-grid">
+            <!-- CARD 1: ELETRICIDADE -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 class="card-title">ELETRICIDADE</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/ChatGPT Image May 2, 2026, 03_21_23 PM.png');"></div>
+                    <div class="card-photo" style="background-image: url('images/ChatGPT Image Jun 3, 2026, 05_19_56 PM.png');"></div>
+                    <div class="card-photo" style="background-image: url('images/grupogeradorfoto.png');"></div>
+                </div>
+                <div class="card-content">
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Manutenção de sistemas eléctricos industriais</li>
+                        <li><i class="fas fa-check-circle"></i> Elaboração e reparação de comandos eléctricos</li>
+                        <li><i class="fas fa-check-circle"></i> Manutenção de Grupo-Gerador</li>
+                        <li><i class="fas fa-check-circle"></i> Diagnóstico e reparação de automação industrial (PLC)</li>
+                        <li><i class="fas fa-check-circle"></i> Reparação e manutenção de sistemas de frio</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="service-tag"><i class="fas fa-microchip"></i> Alta tensão</span>
+                    <span class="service-tag"><i class="fas fa-charging-station"></i> Automação</span>
+                </div>
+            </div>
+
+            <!-- CARD 2: MECÂNICA -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                    <h3 class="card-title">MECÂNICA</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/ChatGPT Image Jun 3, 2026, 05_38_12 PM.png');"></div>
+                    <div class="card-photo" style="background-image: url('images/pen.png');"></div>
+                    <div class="card-photo" style="background-image: url('images/sistema-de-bombeamento.png');"></div>
+                </div>
+                <div class="card-content">
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Reparação de bombas industriais</li>
+                        <li><i class="fas fa-check-circle"></i> Manutenção de sistemas hidráulicos completos</li>
+                        <li><i class="fas fa-check-circle"></i> Manutenção de sistemas pneumáticos</li>
+                        <li><i class="fas fa-check-circle"></i> Recondicionamento de redutores industriais multimarcas</li>
+                        <li><i class="fas fa-check-circle"></i> Alinhamento de veios e balanceamento</li>
+                        <li><i class="fas fa-check-circle"></i> Lubrificação e análise de óleos</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="service-tag"><i class="fas fa-oil-can"></i> Hidráulica</span>
+                    <span class="service-tag"><i class="fas fa-industry"></i> Pneumática</span>
+                </div>
+            </div>
+
+            <!-- CARD 3: MONITORAMENTO -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="card-title">MONITORAMENTO</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/ChatGPT Image 2_05_2026, 17_53_00.png');"></div>
+                    <div class="card-photo" style="background-image: url('images/ChatGPT Image 2_05_2026, 18_02_36.png');"></div>
+               
+                </div>
+                <div class="card-content">
+                    <div class="service-main-item">
+                        <div class="service-main-title">
+                            <i class="fas fa-chart-bar"></i> ANÁLISE DE VIBRAÇÃO E BALANCEAMENTO
+                        </div>
+                        <ul class="service-sub-list">
+                            <li><i class="fas fa-angle-right"></i> Diagnóstico avançado de vibração</li>
+                            <li><i class="fas fa-angle-right"></i> Balanceamento a Laser (In-Situ)</li>
+                            <li><i class="fas fa-angle-right"></i> Coleta e análise de dados preditivos</li>
+                            <li><i class="fas fa-angle-right"></i> Análise de vibração e diagnóstico de falhas</li>
+                            <li><i class="fas fa-angle-right"></i> Teste e diagnóstico do equipamento</li>
+                            <li><i class="fas fa-angle-right"></i> Ações corretivas e planos de manutenção</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-main-item">
+                        <div class="service-main-title">
+                            <i class="fas fa-ruler-combined"></i> ALINHAMENTO DE VEIOS A LASER
+                        </div>
+                        <ul class="service-sub-list">
+                            <li><i class="fas fa-angle-right"></i> Verificações de pré-alinhamento</li>
+                            <li><i class="fas fa-angle-right"></i> Verificações de excentricidade</li>
+                            <li><i class="fas fa-angle-right"></i> Alinhamento aproximado</li>
+                            <li><i class="fas fa-angle-right"></i> Medição e correções de precisão</li>
+                            <li><i class="fas fa-angle-right"></i> Operações de Alta Precisão e eficiência operacional</li>
+                            <li><i class="fas fa-angle-right"></i> Confiabilidade mecânica e redução de falhas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4: COMBUSTÍVEIS E GÁS -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-gas-pump"></i></div>
+                    <h3 class="card-title">COMBUSTÍVEIS E GÁS</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/gasoduto-gas-natural-petrobras-g.jpeg');"></div>
+                    <div class="card-photo" style="background-image: url('images/manutecaobombas.png');"></div>
+                </div>
+                <div class="card-content">
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Construção e montagem de postos de abastecimento de combustível</li>
+                        <li><i class="fas fa-check-circle"></i> Construção de estações de serviço completas</li>
+                        <li><i class="fas fa-check-circle"></i> Manutenção preventiva e corretiva de sistemas de abastecimento</li>
+                        <li><i class="fas fa-check-circle"></i> Montagem de sistemas de medição e bombeamento</li>
+                        <li><i class="fas fa-check-circle"></i> Instalação de tanques de armazenamento de combustível</li>
+                        <li><i class="fas fa-check-circle"></i> Redes de distribuição de gás industrial e doméstico</li>
+                        <li><i class="fas fa-check-circle"></i> Manutenção de válvulas, condutas e acessórios para GLP/GNV</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="service-tag"><i class="fas fa-fire-extinguisher"></i> Postos de Combustível</span>
+                    <span class="service-tag"><i class="fas fa-fire"></i> Redes de Gás</span>
+                    <span class="service-tag"><i class="fas fa-tachometer-alt"></i> Automação</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="maintenance-note">
+            <i class="fas fa-certificate"></i> Certificação ISO • Equipa técnica especializada • Atendimento 24/7
+        </div>
+    </div>
+</section>
+<!-- ========== SEÇÃO STANDARDIZAÇÃO ========== -->
+<section id="standardizacao" class="standardization-section">
+    <div class="matricula-container" style="max-width: 1400px; margin: 0 auto;">
+        
+        <!-- CABEÇALHO CENTRALIZADO -->
+        <div style="text-align: center;">
+            <div style="background: linear-gradient(135deg, #AF9C03, #FFD700); color: #1a1a2e; padding: 0.3rem 1.2rem; display: inline-block; font-weight: 800; font-size: 0.8rem; border-radius: 30px; margin-bottom: 1rem; letter-spacing: 1px;">
+                <i class="fas fa-certificate"></i> Qualidade e Excelência
+            </div>
+            <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: #1a1a2e; margin-bottom: 0.5rem;">
+                Sobre <span style="color: #AF9C03;">Standardização</span>
+            </h2>
+            <p style="color: #555; max-width: 700px; margin: 0 auto; font-size: 0.85rem; line-height: 1.5;">
+                Comprometidos com os mais altos padrões internacionais de qualidade, ambiente e segurança
+            </p>
+            
+            <div style="width: 40px; height: 2px; background: linear-gradient(90deg, #AF9C03, #FFD700); margin: 1rem auto; border-radius: 2px;"></div>
+        </div>
+        
+        <!-- 3 COLUNAS -->
+        <div class="standard-grid">
+            <!-- COLUNA 1: SGQ -->
+            <div class="standard-card">
+                <div class="standard-number sgq">SGQ</div>
+                <div class="standard-tag sgq">ISO 9001:2015</div>
+                <div class="standard-label">Sistema de Gestão da Qualidade</div>
+            </div>
+            
+            <!-- COLUNA 2: SGA -->
+            <div class="standard-card">
+                <div class="standard-number sga">SGA</div>
+                <div class="standard-tag sga">ISO 14001:2015</div>
+                <div class="standard-label">Sistema de Gestão Ambiental</div>
+            </div>
+            
+            <!-- COLUNA 3: SGSST -->
+            <div class="standard-card">
+                <div class="standard-number sgsst">SGSST</div>
+                <div class="standard-tag sgsst">ISO 45001:2018</div>
+                <div class="standard-label">Sistema de Gestão de Segurança e Saúde Ocupacional</div>
+            </div>
+        </div>
+        
+     
+        
+    </div>
+</section>
+
+<!-- ==================== SEÇÃO DESENHO ESTRUTURAL ==================== -->
+<section id="desenho-estrutural" class="desenhos-section">
+    <div style="max-width: 1400px; margin: 0 auto; position: relative; z-index: 2;">
+        
+        <!-- CABEÇALHO -->
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <div style="background: linear-gradient(135deg, #AF9C03, #FFD700); color: #1a1a2e; padding: 0.3rem 1.5rem; display: inline-block; font-weight: 800; font-size: 0.85rem; border-radius: 50px; margin-bottom: 1rem; letter-spacing: 1px;">
+                <i class="fas fa-drafting-compass"></i> Projectos de Engenharia
+            </div>
+            <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #1a1a2e; margin-bottom: 0.5rem;">
+                Desenho <span style="color: #AF9C03;">Estrutural</span>
+            </h2>
+            <p style="color: #555; max-width: 700px; margin: 0 auto; font-size: 1rem; line-height: 1.6;">
+                Projectos de engenharia detalhados com precisão, tecnologia e inovação para garantir a excelência das suas obras
+            </p>
+            <div style="width: 60px; height: 3px; background: linear-gradient(90deg, #AF9C03, #FFD700); margin: 1.5rem auto 0; border-radius: 3px;"></div>
+        </div>
+
+        <!-- GRID DE 3 COLUNAS -->
+        <div class="desenhos-grid">
+            <!-- CARD 1: AutoCAD -->
+            <div class="desenhos-card">
+                <div class="desenhos-img-container">
+                    <img src="images/desenho1.png" alt="AutoCAD">
+                    <div class="desenhos-overlay">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>Resultados / Entregáveis</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Projectos executivos completos</li>
+                            <li><i class="fas fa-check-circle"></i> Plantas de aprovação</li>
+                            <li><i class="fas fa-check-circle"></i> Detalhamento construtivo</li>
+                            <li><i class="fas fa-check-circle"></i> Memórias de cálculo</li>
+                            <li><i class="fas fa-check-circle"></i> Listas de materiais e quantitativos</li>
+                        </ul>
+                    </div>
+                    <div class="desenhos-badge"><i class="fas fa-star"></i> Profissional</div>
+                </div>
+                <div class="desenhos-card-content">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3>AutoCAD</h3>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <span class="tag">2D/3D</span>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <!-- CARD 2: SolidWorks -->
+            <div class="desenhos-card">
+                <div class="desenhos-img-container">
+                    <img src="images/374effea-b432-4e2e-8673-e2dcd3cc14b0.png" alt="SolidWorks">
+                    <div class="desenhos-overlay">
+                        <i class="fas fa-cube"></i>
+                        <h4>Resultados / Entregáveis</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Modelos 3D paramétricos</li>
+                            <li><i class="fas fa-check-circle"></i> Simulações de esforços</li>
+                            <li><i class="fas fa-check-circle"></i> Análises de tensão e deformação</li>
+                            <li><i class="fas fa-check-circle"></i> Desenhos de fabricação</li>
+                            <li><i class="fas fa-check-circle"></i> Listas de componentes e exploded views</li>
+                        </ul>
+                    </div>
+                    <div class="desenhos-badge"><i class="fas fa-cube"></i> 3D Avançado</div>
+                </div>
+                <div class="desenhos-card-content">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>SolidWorks</h3>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <span class="tag">Modelação Paramétrica</span>
+                    </div>
+               
+                </div>
+            </div>
+
+            <!-- CARD 3: Análise Estrutural -->
+            <div class="desenhos-card">
+                <div class="desenhos-img-container">
+                    <img src="images/d664ce10-94fd-47e5-98ed-61b6419f6316.png" alt="Análise Estrutural">
+                    <div class="desenhos-overlay">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Resultados / Entregáveis</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Laudos de cálculo estrutural</li>
+                            <li><i class="fas fa-check-circle"></i> Dimensionamento de fundações</li>
+                            <li><i class="fas fa-check-circle"></i> Análise de cargas e esforços</li>
+                            <li><i class="fas fa-check-circle"></i> Relatórios técnicos completos</li>
+                            <li><i class="fas fa-check-circle"></i> Conformidade com normas internacionais</li>
+                        </ul>
+                    </div>
+                    <div class="desenhos-badge"><i class="fas fa-chart-line"></i> Precisão Garantida</div>
+                </div>
+                <div class="desenhos-card-content">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Análise Estrutural</h3>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <span class="tag">Cálculo e Dimensionamento</span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- CARROSSEL DE PROJETOS -->
+        <div style="margin-top: 3rem;">
+            <div style="text-align: center; margin-bottom: 1.5rem;">
+                <div style="background: rgba(175,156,3,0.12); color: #AF9C03; padding: 0.2rem 1rem; display: inline-block; font-weight: 600; font-size: 0.75rem; border-radius: 20px; margin-bottom: 0.5rem;">
+                    <i class="fas fa-images"></i> Projectos em Destaque
+                </div>
+                <h3 style="font-size: 1.3rem; font-weight: 700; color: #1a1a2e; margin: 0;">Galeria de <span style="color: #AF9C03;">Projectos Realizados</span></h3>
+            </div>
+            
+            <div style="position: relative; width: 100%; overflow: hidden;">
+                <div class="projetos-carrossel" id="carrosselProjetos">
+                    <div class="projeto-item">
+                        <img src="images/Malas de ferramentas e Barras de rolamento.png" alt="Projeto 1">
+                        <div class="info">
+                            <h4>Malas de ferramentas e Barras de rolamento</h4>
+                            <p>AutoCAD 3D • 2024</p>
+                        </div>
+                    </div>
+                    <div class="projeto-item">
+                        <img src="images/caro2.png" alt="Projeto 2">
+                        <div class="info">
+                            <h4>Produção de componentes mecânicos sob medida</h4>
+                            <p>SolidWorks • Simulação de Esforços</p>
+                        </div>
+                    </div>
+                    <div class="projeto-item">
+                        <img src="images/caro3.png" alt="Projeto 3">
+                        <div class="info">
+                            <h4>Análise Estrutural - Ponte</h4>
+                            <p>Cálculo de Cargas • Laudo Técnico</p>
+                        </div>
+                    </div>
+                    <div class="projeto-item">
+                        <img src="images/caro4.png" alt="Projeto 4">
+                        <div class="info">
+                            <h4>Caixas de Ferramentas</h4>
+                            <p>AutoCAD • Detalhamento Completo</p>
+                        </div>
+                    </div>
+                    <div class="projeto-item">
+                        <img src="images/caro5.png" alt="Projeto 5">
+                        <div class="info">
+                            <h4>Barras Industriais</h4>
+                            <p>SolidWorks • Lista de Componentes</p>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+        </div>
+
+        <!-- BOTÃO CTA -->
+      
+</section>
+
+<!-- ==================== SEÇÃO SOBRE NÓS ==================== -->
+<section id="sistema" class="sobre-nos-section">
+    <div class="sobre-nos-container">
+        <div class="sobre-nos-header">
+            <div class="sobre-nos-badge"><i class="fas fa-building"></i> Quem Somos</div>
+            <h2 class="sobre-nos-title">Sobre <span>Nós</span></h2>
+            <p class="sobre-nos-subtitle">Conheça a nossa essência, propósito e os valores que guiam todas as nossas ações</p>
+        </div>
+
+        <div class="sobre-nos-grid">
+            <!-- Card 1: MISSÃO -->
+            <div class="sobre-nos-card">
+                <div class="sobre-nos-card-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3 class="sobre-nos-card-title">Nossa Missão</h3>
+                <p class="sobre-nos-card-text">Instalar, fornecer e dar assistência técnica de Serviços de Engenharia de forma justa, com qualidade e pontualidade, superando as expectativas dos nossos clientes.</p>
+                <div class="sobre-nos-card-footer">
+                    <span class="sobre-nos-tag"><i class="fas fa-check-circle"></i> Compromisso</span>
+                    <span class="sobre-nos-tag"><i class="fas fa-check-circle"></i> Excelência</span>
+                </div>
+            </div>
+
+            <!-- Card 2: VISÃO -->
+            <div class="sobre-nos-card">
+                <div class="sobre-nos-card-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="sobre-nos-card-title">Nossa Visão</h3>
+                <p class="sobre-nos-card-text">Fazer parte das 10 melhores PME's do país pela resposta rápida e fornecimento de serviços de qualidade ao cliente, tornando-nos referência no setor de engenharia.</p>
+                <div class="sobre-nos-card-footer">
+                    <span class="sobre-nos-tag"><i class="fas fa-chart-line"></i> Liderança</span>
+                    <span class="sobre-nos-tag"><i class="fas fa-trophy"></i> Excelência</span>
+                </div>
+            </div>
+
+            <!-- Card 3: VALORES -->
+            <div class="sobre-nos-card">
+                <div class="sobre-nos-card-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="sobre-nos-card-title">Nossos Valores</h3>
+                <p class="sobre-nos-card-text">Trabalhar com honestidade e respeito pelo Homem. Nosso planeta é precioso, nossa missão é protegê-lo através de práticas sustentáveis e éticas.</p>
+                <div class="sobre-nos-card-footer">
+                    <span class="sobre-nos-tag"><i class="fas fa-hand-holding-heart"></i> Honestidade</span>
+                    <span class="sobre-nos-tag"><i class="fas fa-globe-africa"></i> Sustentabilidade</span>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+</section>
+
+<!-- ==================== SEÇÃO FABRICO DE ESTRUTURAS ==================== -->
+<!-- ==================== SEÇÃO FABRICO DE ESTRUTURAS ==================== -->
+<!-- ==================== SEÇÃO FABRICO DE ESTRUTURAS ==================== -->
+<section id="fabrico-estruturas" style="
+    position: relative;
+    padding: 5rem 5%;
+    overflow: hidden;
+    background-image: url('images/fabricacao.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 400px;
+">
+    <!-- Overlay escuro -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 1;
+    "></div>
+    
+    <div class="fabrico-container" style="
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    ">
+        <div class="fabrico-header" style="text-align: center; margin-bottom: 2.5rem;">
+            <div class="fabrico-badge" style="
+                background: linear-gradient(135deg, #AF9C03, #FFD700);
+                color: #1a1a2e;
+                padding: 0.3rem 1.2rem;
+                display: inline-block;
+                font-weight: 800;
+                font-size: 0.85rem;
+                margin-bottom: 1rem;
+                letter-spacing: 1px;
+            ">
+                <i class="fas fa-wrench"></i> Soluções em Metalomecânica
+            </div>
+            <h2 class="fabrico-title" style="
+                font-size: clamp(2rem, 4vw, 3rem);
+                font-weight: 800;
+                color: white;
+                margin-bottom: 0.5rem;
+            ">
+                Fabrico de <span style="color: #AF9C03;">Estruturas</span>
+            </h2>
+            <p class="fabrico-subtitle" style="
+                color: rgba(255, 255, 255, 0.7);
+                max-width: 800px;
+                margin: 0 auto;
+                font-size: 1rem;
+                line-height: 1.6;
+            ">
+                Fabrico de estruturas metálicas, reparação e manutenção de equipamentos industriais com alta precisão e qualidade
+            </p>
+        </div>
+
+        <!-- CARROSSEL -->
+        <div class="fabrico-carrossel-container" style="
+            position: relative;
+            width: 100%;
+            margin: 2rem 0 3rem;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        ">
+            <div class="fabrico-carrossel" id="fabricoCarrossel" style="
+                position: relative;
+                width: 100%;
+                height: 450px;
+            ">
+                <div class="fabrico-carrossel-slide active" style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('images/ChatGPT Image May 2, 2026, 03_18_23 PM.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    opacity: 1;
+                    transition: opacity 0.8s ease-in-out;
+                    display: flex;
+                    align-items: flex-end;
+                ">
+                    <div class="slide-caption" style="
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5), transparent);
+                        padding: 1.5rem 2rem;
+                        width: 100%;
+                        color: white;
+                    ">
+                        <h4 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.3rem;">
+                            <i class="fas fa-building" style="color: #AF9C03; margin-right: 10px;"></i> Estrutura Metálica Industrial
+                        </h4>
+                        <p style="color: rgba(255, 255, 255, 0.85); font-size: 0.9rem;">Fabricação de galpões, mezaninos e estruturas para indústrias</p>
+                    </div>
+                </div>
+                <div class="fabrico-carrossel-slide" style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('images/metalicos-2-scaled.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    opacity: 0;
+                    transition: opacity 0.8s ease-in-out;
+                    display: flex;
+                    align-items: flex-end;
+                ">
+                    <div class="slide-caption" style="
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5), transparent);
+                        padding: 1.5rem 2rem;
+                        width: 100%;
+                        color: white;
+                    ">
+                        <h4 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.3rem;">
+                            <i class="fas fa-drafting-compass" style="color: #AF9C03; margin-right: 10px;"></i> Projectos Sob Medida
+                        </h4>
+                        <p style="color: rgba(255, 255, 255, 0.85); font-size: 0.9rem;">Desenvolvimento e fabrico conforme necessidade do cliente</p>
+                    </div>
+                </div>
+                <div class="fabrico-carrossel-slide" style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('images/fe4462aa-dc5a-412a-8bfe-3cdfa00fdf99.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    opacity: 0;
+                    transition: opacity 0.8s ease-in-out;
+                    display: flex;
+                    align-items: flex-end;
+                ">
+                    <div class="slide-caption" style="
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5), transparent);
+                        padding: 1.5rem 2rem;
+                        width: 100%;
+                        color: white;
+                    ">
+                        <h4 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.3rem;">
+                            <i class="fas fa-home" style="color: #AF9C03; margin-right: 10px;"></i> Serralharia Civil
+                        </h4>
+                        <p style="color: rgba(255, 255, 255, 0.85); font-size: 0.9rem;">Portões, grades, guarda-corpos, escadas e estruturas residenciais</p>
+                    </div>
+                </div>
+                <div class="fabrico-carrossel-slide" style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('images/bb519250-c9f0-4f54-83df-8ed4f4d1de7d.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    opacity: 0;
+                    transition: opacity 0.8s ease-in-out;
+                    display: flex;
+                    align-items: flex-end;
+                ">
+                    <div class="slide-caption" style="
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5), transparent);
+                        padding: 1.5rem 2rem;
+                        width: 100%;
+                        color: white;
+                    ">
+                        <h4 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.3rem;">
+                            <i class="fas fa-tools" style="color: #AF9C03; margin-right: 10px;"></i> Manutenção de Equipamentos
+                        </h4>
+                        <p style="color: rgba(255, 255, 255, 0.85); font-size: 0.9rem;">Reparação e manutenção preventiva/corretiva de equipamentos industriais</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="fabrico-carrossel-btn fabrico-prev" id="fabricoPrevBtn" style="
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+                width: 45px;
+                height: 45px;
+                background: rgba(0, 0, 0, 0.6);
+                backdrop-filter: blur(5px);
+                border: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                color: white;
+                transition: all 0.3s ease;
+                z-index: 20;
+            ">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="fabrico-carrossel-btn fabrico-next" id="fabricoNextBtn" style="
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                width: 45px;
+                height: 45px;
+                background: rgba(0, 0, 0, 0.6);
+                backdrop-filter: blur(5px);
+                border: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                color: white;
+                transition: all 0.3s ease;
+                z-index: 20;
+            ">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="fabrico-indicators" id="fabricoIndicators" style="
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                gap: 12px;
+                z-index: 20;
+            ">
+                <div class="fabrico-dot active" style="width: 12px; height: 12px; background: #AF9C03; border-radius: 50%; cursor: pointer; transition: all 0.3s ease;"></div>
+                <div class="fabrico-dot" style="width: 12px; height: 12px; background: rgba(255,255,255,0.5); border-radius: 50%; cursor: pointer; transition: all 0.3s ease;"></div>
+                <div class="fabrico-dot" style="width: 12px; height: 12px; background: rgba(255,255,255,0.5); border-radius: 50%; cursor: pointer; transition: all 0.3s ease;"></div>
+                <div class="fabrico-dot" style="width: 12px; height: 12px; background: rgba(255,255,255,0.5); border-radius: 50%; cursor: pointer; transition: all 0.3s ease;"></div>
+            </div>
+        </div>
+
+        <!-- 2 CARDS COM CORREÇÃO MOBILE -->
+        <div class="fabrico-cards-wrapper" style="
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        ">
+            <!-- CARD 1: Estruturas Metálicas -->
+            <div class="fabrico-card" style="
+                background: white;
+                width: calc(50% - 1rem);
+                max-width: 500px;
+                padding: 2rem;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+                border-radius: 12px;
+                flex: 1 1 280px;
+            ">
+                <div class="fabrico-card-icon" style="
+                    width: 70px;
+                    height: 70px;
+                    background: linear-gradient(135deg, #AF9C03, #FFD700);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1.2rem;
+                    border-radius: 12px;
+                ">
+                    <i class="fas fa-industry" style="font-size: 2rem; color: #1a1a2e;"></i>
+                </div>
+                <h3 class="fabrico-card-title" style="
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: #AF9C03;
+                    margin-bottom: 1rem;
+                ">Estruturas Metálicas</h3>
+                <p class="fabrico-card-text" style="
+                    color: #4a5a6a;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    margin-bottom: 1rem;
+                ">Fabrico e montagem de estruturas metálicas para indústrias, armazéns, coberturas e suportes estruturais com máxima resistência e durabilidade.</p>
+                <ul class="fabrico-card-list" style="
+                    list-style: none;
+                    padding: 0;
+                    margin: 0 0 1.2rem 0;
+                ">
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border-bottom: 1px solid #f0f2f5;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Galpões industriais e comerciais
+                    </li>
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border-bottom: 1px solid #f0f2f5;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Coberturas metálicas e sheds
+                    </li>
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border-bottom: 1px solid #f0f2f5;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Treliças e vigas metálicas
+                    </li>
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border-bottom: 1px solid #f0f2f5;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Mezaninos e plataformas
+                    </li>
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Estruturas sob medida
+                    </li>
+                </ul>
+               
+            </div>
+
+            <!-- CARD 2: Reparação e Manutenção -->
+            <div class="fabrico-card" style="
+                background: white;
+                width: calc(50% - 1rem);
+                max-width: 500px;
+                padding: 2rem;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+                border-radius: 12px;
+                flex: 1 1 280px;
+            ">
+                <div class="fabrico-card-icon" style="
+                    width: 70px;
+                    height: 70px;
+                    background: linear-gradient(135deg, #AF9C03, #FFD700);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1.2rem;
+                    border-radius: 12px;
+                ">
+                    <i class="fas fa-tools" style="font-size: 2rem; color: #1a1a2e;"></i>
+                </div>
+                <h3 class="fabrico-card-title" style="
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: #AF9C03;
+                    margin-bottom: 1rem;
+                ">Reparação e Manutenção</h3>
+                <p class="fabrico-card-text" style="
+                    color: #4a5a6a;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    margin-bottom: 1rem;
+                ">Serviços especializados de manutenção preventiva e corretiva de equipamentos industriais e estruturas metálicas, garantindo máxima vida útil.</p>
+                <ul class="fabrico-card-list" style="
+                    list-style: none;
+                    padding: 0;
+                    margin: 0 0 1.2rem 0;
+                ">
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border-bottom: 1px solid #f0f2f5;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Manutenção de equipamentos industriais
+                    </li>
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border-bottom: 1px solid #f0f2f5;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Reparação de estruturas danificadas
+                    </li>
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border-bottom: 1px solid #f0f2f5;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Soldagem e corte especializado
+                    </li>
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border-bottom: 1px solid #f0f2f5;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Reforço estrutural e recuperação
+                    </li>
+                    <li style="
+                        color: #3a4a5c;
+                        font-size: 0.85rem;
+                        padding: 0.4rem 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    ">
+                        <i class="fas fa-check-circle" style="color: #AF9C03; font-size: 0.8rem; width: 20px; flex-shrink: 0;"></i> Jateamento e pintura industrial
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <!-- RODAPÉ -->
+        <div class="fabrico-footer" style="
+            margin-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        ">
+            <i class="fas fa-certificate"></i> Aços certificados • Soldadores qualificados • Normas técnicas • Entrega garantida
+        </div>
+    </div>
+</section>
+<!-- ==================== SEÇÃO CONSTRUÇÃO CIVIL ==================== -->
+<section id="construcao-civil" class="industrial-maintenance-section" style="background-image: url('images/construcao-civil-bg.jpg');">
+    <div class="maintenance-overlay"></div>
+    <div class="maintenance-container">
+        <div class="maintenance-header">
+            <div class="maintenance-badge"><i class="fas fa-hard-hat"></i> Engenharia e Construção</div>
+            <h2 class="maintenance-title">Construção <span style="color: #AF9C03;">Civil</span></h2>
+            <p class="maintenance-subtitle">Execução de projectos de construção, remodelação e manutenção de edifícios com qualidade e segurança</p>
+        </div>
+
+        <div class="maintenance-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; justify-content: center; align-items: stretch;">
+            <!-- CARD 1: CONSTRUÇÃO -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-building"></i></div>
+                    <h3 class="card-title">CONSTRUÇÃO</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/161696230-construcao-civil-obra-agbr.jpg');"></div>
+                    <div class="card-photo" style="background-image: url('images/5f6deac08aa4b0.41559213.jpg');"></div>
+                </div>
+                <div class="card-content">
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Construção de edifícios residenciais e comerciais</li>
+                        <li><i class="fas fa-check-circle"></i> Obras industriais e armazéns</li>
+                        <li><i class="fas fa-check-circle"></i> Fundações e estruturas de betão armado</li>
+                        <li><i class="fas fa-check-circle"></i> Alvenaria e acabamentos</li>
+                        <li><i class="fas fa-check-circle"></i> Gestão completa de projectos</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="service-tag"><i class="fas fa-drafting-compass"></i> Projectos</span>
+                    <span class="service-tag"><i class="fas fa-hard-hat"></i> Obras</span>
+                    <span class="service-tag"><i class="fas fa-chart-line"></i> Gestão</span>
+                </div>
+            </div>
+
+            <!-- CARD 2: REMODELAÇÃO -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-paint-roller"></i></div>
+                    <h3 class="card-title">REMODELAÇÃO</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/Reabilitacao de maternidade de CS.png');"></div>
+                    <div class="card-photo" style="background-image: url('images/interna-construcao-predio.jpg');"></div>
+                </div>
+                <div class="card-content">
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Reforma e remodelação de espaços</li>
+                        <li><i class="fas fa-check-circle"></i> Reabilitação de fachadas</li>
+                        <li><i class="fas fa-check-circle"></i> Modernização de instalações</li>
+                        <li><i class="fas fa-check-circle"></i> Pintura e revestimentos</li>
+                        <li><i class="fas fa-check-circle"></i> Impermeabilização</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="service-tag"><i class="fas fa-home"></i> Residencial</span>
+                    <span class="service-tag"><i class="fas fa-building"></i> Comercial</span>
+                    <span class="service-tag"><i class="fas fa-palette"></i> Design</span>
+                </div>
+            </div>
+
+            <!-- CARD 3: MANUTENÇÃO -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h3 class="card-title">MANUTENÇÃO</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/obra_civil.jpg');"></div>
+                    <div class="card-photo" style="background-image: url('images/unnamed.png');"></div>                 
+                </div>
+                <div class="card-content">
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Manutenção preventiva e corretiva</li>
+                        <li><i class="fas fa-check-circle"></i> Conservação de edifícios</li>
+                        <li><i class="fas fa-check-circle"></i> Reparações hidráulicas e sanitárias</li>
+                        <li><i class="fas fa-check-circle"></i> Manutenção de coberturas</li>
+                        <li><i class="fas fa-check-circle"></i> Inspecções técnicas</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="service-tag"><i class="fas fa-clock"></i> 24/7</span>
+                    <span class="service-tag"><i class="fas fa-chart-line"></i> Preventiva</span>
+                    <span class="service-tag"><i class="fas fa-clipboard-list"></i> Inspecção</span>
+                </div>
+            </div>
+        </div>
+        
+     
+        <div class="maintenance-note">
+            <i class="fas fa-certificate"></i> Projectos entregues no prazo • Mão de obra qualificada • Garantia de qualidade
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SEÇÃO AGRICULTURA ==================== -->
+<section id="agricultura" style="
+    background-image: url('images/Trator-3-1024x576.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 500px;
+    padding: 80px 20px;
+    position: relative;
+">
+    <div class="maintenance-overlay"></div>
+    <div class="maintenance-container">
+        <div class="maintenance-header">
+            <div class="maintenance-badge" style="background: linear-gradient(135deg, #2E7D32, #4CAF50); color: white;"><i class="fas fa-tractor"></i> Soluções para o Agro</div>
+            <h2 class="maintenance-title">Agricultura <span style="color: #2E7D32;">Modernizada</span></h2>
+            <p class="maintenance-subtitle">Soluções completas para o desenvolvimento do agronegócio com tecnologia, eficiência e sustentabilidade</p>
+        </div>
+
+        <div class="maintenance-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; justify-content: center; align-items: stretch;">
+            <!-- COLUNA 1: INSUMOS/EQUIPAMENTOS -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #2E7D32, #4CAF50); color: white;"><i class="fas fa-boxes"></i></div>
+                    <h3 class="card-title" style="color: #2E7D32;">INSUMOS/EQUIPAMENTOS</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/Charrua_1F-90-H2.jpg');"></div>
+                    <div class="card-photo" style="background-image: url('images/charua.png');"></div>
+                    <div class="card-photo" style="background-image: url('images/Trator-3-1024x576.jpg');"></div>
+                </div>
+                <div class="card-content">
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle" style="color: #2E7D32;"></i> Fornecimento de fertilizantes e correctivos do solo</li>
+                        <li><i class="fas fa-check-circle" style="color: #2E7D32;"></i> Sementes certificadas e mudas de alta qualidade</li>
+                        <li><i class="fas fa-check-circle" style="color: #2E7D32;"></i> Equipamentos para beneficiamento de grãos</li>
+                        <li><i class="fas fa-check-circle" style="color: #2E7D32;"></i> Linhas completas de processamento de alimentos</li>
+                        <li><i class="fas fa-check-circle" style="color: #2E7D32;"></i> Churua</li>
+                        <li><i class="fas fa-check-circle" style="color: #2E7D32;"></i> Tratores</li>
+                        <li><i class="fas fa-check-circle" style="color: #2E7D32;"></i> Charua tracção animal</li>
+                        <li><i class="fas fa-check-circle" style="color: #2E7D32;"></i> Charua atracção mecânica</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <span class="service-tag" style="background: #E8F5E9; border-color: #C8E6C9; color: #2E7D32;"><i class="fas fa-seedling"></i> Insumos</span>
+                    <span class="service-tag" style="background: #E8F5E9; border-color: #C8E6C9; color: #2E7D32;"><i class="fas fa-industry"></i> Agroindústria</span>
+                </div>
+            </div>
+
+            <!-- COLUNA 2: SISTEMAS DE ESTUFAS E REGAS -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #2E7D32, #4CAF50); color: white;"><i class="fas fa-greenhouse"></i></div>
+                    <h3 class="card-title" style="color: #2E7D32;">ESTUFAS E REGAS</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/IMG_3655-scaled.jpg');"></div>
+                    <div class="card-photo" style="background-image: url('images/aspersao_3.jpg');"></div>
+                    <div class="card-photo" style="background-image: url('images/187269830-bocal-dos-aspersores-de-trator-pulverizado-pulverização-de-soja.jpg');"></div>
+                </div>
+                <div class="card-content">
+                    <div class="service-main-item">
+                        <div class="service-main-title" style="color: #2E7D32;">
+                            <i class="fas fa-leaf" style="color: #4CAF50;"></i> SISTEMAS DE ESTUFAS
+                        </div>
+                        <ul class="service-sub-list">
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Estufas hidropónicas e aeropónicas</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Estufas tipo túnel alto e capela</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Estruturas metálicas galvanizadas</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Cobertura com filme agrícola e policarbonato</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Sistemas de climatização e ventilação</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Controlo automatizado de temperatura e humidade</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Telas de sombreamento e proteção contra pragas</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Estufas para produção de mudas e flores</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Sistemas de monitoramento remoto</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-main-item">
+                        <div class="service-main-title" style="color: #2E7D32;">
+                            <i class="fas fa-water" style="color: #4CAF50;"></i> SISTEMAS DE REGA
+                        </div>
+                        <ul class="service-sub-list">
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Irrigação por gotejamento (micro-aspersão)</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Irrigação por aspersão convencional e pivô central</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Sistemas de rega automatizada com temporizadores</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Captação e bombeamento de água</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Reservatórios e tanques de armazenamento</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Filtragem e tratamento de água para irrigação</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Fertirrigação (aplicação de fertilizantes via rega)</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Sensores de humidade do solo</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Dimensionamento hidráulico personalizado</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="service-tag" style="background: #E8F5E9; border-color: #C8E6C9; color: #2E7D32;"><i class="fas fa-leaf"></i> Hidroponia</span>
+                    <span class="service-tag" style="background: #E8F5E9; border-color: #C8E6C9; color: #2E7D32;"><i class="fas fa-tint"></i> Gotejamento</span>
+                    <span class="service-tag" style="background: #E8F5E9; border-color: #C8E6C9; color: #2E7D32;"><i class="fas fa-charging-station"></i> Automação</span>
+                </div>
+            </div>
+
+            <!-- COLUNA 3: AGROINDÚSTRIA -->
+            <div class="maintenance-card">
+                <div class="card-header">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #2E7D32, #4CAF50); color: white;"><i class="fas fa-industry"></i></div>
+                    <h3 class="card-title" style="color: #2E7D32;">AGROINDÚSTRIA</h3>
+                </div>
+                <div class="card-photo-container">
+                    <div class="card-photo active" style="background-image: url('images/agro2.png');"></div>
+                    <div class="card-photo" style="background-image: url('images/Montagem de linha de processamento de Arroz.png');"></div>
+                    <div class="card-photo" style="background-image: url('images/images.jpg');"></div>
+                </div>
+                <div class="card-content">
+                    <div class="service-main-item">
+                        <div class="service-main-title" style="color: #2E7D32;">
+                            <i class="fas fa-cogs" style="color: #4CAF50;"></i> EQUIPAMENTOS DE PROCESSAMENTO
+                        </div>
+                        <ul class="service-sub-list">
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Linhas completas para processamento de MANDIOCA</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Linhas completas para processamento de MILHO</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Linhas completas para processamento de ARROZ</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Moinhos de martelos</li>
+                            <li><i class="fas fa-angle-right" style="color: #2E7D32;"></i> Equipamentos para produção de óleos vegetais</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="service-tag" style="background: #E8F5E9; border-color: #C8E6C9; color: #2E7D32;"><i class="fas fa-seedling"></i> Mandioca</span>
+                    <span class="service-tag" style="background: #E8F5E9; border-color: #C8E6C9; color: #2E7D32;"><i class="fas fa-wheat-alt"></i> Milho</span>
+                    <span class="service-tag" style="background: #E8F5E9; border-color: #C8E6C9; color: #2E7D32;"><i class="fas fa-rice"></i> Arroz</span>
+                </div>
+            </div>
+        </div>
+        
+      
+        <div class="maintenance-note">
+            <i class="fas fa-award"></i> +15 anos de experiência • Equipa técnica especializada • Soluções personalizadas
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SEÇÃO SERVIÇOS REALIZADOS ==================== -->
+<!-- ==================== SEÇÃO SERVIÇOS & INDÚSTRIAS ATENDIDAS ==================== -->
+<!-- ==================== SEÇÃO SERVIÇOS & INDÚSTRIAS ATENDIDAS ==================== -->
+<section id="classes" class="bunk-classes-section" style="
+    background-image: url('images/rightsidelogo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 500px;
+    padding: 5rem 5%;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+">
+    <div class="bunk-container">
+        <div class="bunk-card-wrapper">
+            <div class="bunk-badge">
+                <i class="fas fa-trophy"></i> NOSSA JORNADA DE EXCELÊNCIA
+            </div>
+            <h2 class="bunk-title">
+                Serviços & <span style="color: #FFE952;">Indústrias Atendidas</span>
+            </h2>
+            <p class="bunk-subtitle">
+                Soluções completas e personalizadas para os mais diversos setores industriais
+            </p>
+
+            <!-- ===== GRID DE SERVIÇOS ===== -->
+            <div class="classes-grid">
+                <!-- CARD 1 -->
+                <div class="class-card">
+                    <div class="class-photo" style="background-image: url('images/Construção da Panela – Açucareira do Illovo.png');"></div>
+                    <div class="class-icon"><i class="fas fa-industry"></i></div>
+                    <h3>Construção da Panela – Açucareira do Illovo</h3>
+                    <div class="class-price">Projecto Industrial</div>
+                    <p>Fabricação e montagem de equipamentos industriais para a indústria açucareira</p>
+                    <div class="class-schedule">
+                        <i class="fas fa-chart-line"></i> Alta performance
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="class-card">
+                    <div class="class-photo" style="background-image: url('images/Fabricação de canopis e construção de.png');"></div>
+                    <div class="class-icon"><i class="fas fa-gas-pump"></i></div>
+                    <h3>Fabricação de canopis e construção de postos de abastecimento</h3>
+                    <div class="class-price">Projecto Estrutural</div>
+                    <p>Fabricação de estruturas metálicas e construção de postos de combustível</p>
+                    <div class="class-schedule">
+                        <i class="fas fa-hard-hat"></i> Engenharia civil
+                    </div>
+                </div>
+
+                <!-- CARD 3 - DESTAQUE -->
+                <div class="class-card featured">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i> Mais Procurado
+                    </div>
+                    <div class="class-photo" style="background-image: url('images/ChatGPT Image May 2, 2026, 03_12_40 PM.png');"></div>
+                    <div class="class-icon"><i class="fas fa-oil-can"></i></div>
+                    <h3>Montagem do sistema de abastecimento de combustível em Nacala-Trans-ruccs</h3>
+                    <div class="class-price">Sistema Completo</div>
+                    <p>Montagem de sistemas de abastecimento e distribuição de combustível</p>
+                    <div class="class-schedule">
+                        <i class="fas fa-charging-station"></i> Setor de energia
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="class-card">
+                    <div class="class-photo" style="background-image: url('images/Montagem de sistema de abastecimento de lalgy.png');"></div>
+                    <div class="class-icon"><i class="fas fa-truck-fuel"></i></div>
+                    <h3>Montagem de sistema de abastecimento de combustível Nacala-Lalgy</h3>
+                    <div class="class-price">Projecto Especial</div>
+                    <p>Instalação de sistemas de abastecimento com tecnologia de ponta</p>
+                    <div class="class-schedule">
+                        <i class="fas fa-check-circle"></i> Entrega garantida
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== TÍTULO INDÚSTRIAS ===== -->
+            <div class="extra-title">
+                <i class="fas fa-chart-pie"></i> Indústrias que atendemos
+            </div>
+            <p class="extra-subtitle">Projectos realizados com excelência nos mais diversos sectores industriais</p>
+
+            <!-- ===== GRID DE INDÚSTRIAS ===== -->
+            <div class="industries-grid">
+                <!-- INDÚSTRIA 1 -->
+                <div class="industry-card">
+                    <div class="industry-photo" style="background-image: url('images/ChatGPT Image 2_05_2026, 15_08_20.png');"></div>
+                    <div class="industry-icon"><i class="fas fa-fire"></i></div>
+                    <h4>Substituição de tubagem de óleo térmico e isolamento térmico</h4>
+                    <div class="industry-price">Terminal de bitume - PUMA Energy</div>
+                    <p>Substituição completa de tubagem de óleo térmico e aplicação de isolamento térmico especializado</p>
+                    <div class="industry-schedule">
+                        <i class="fas fa-check-circle"></i> Parceiro certificado PUMA
+                    </div>
+                </div>
+
+                <!-- INDÚSTRIA 2 -->
+                <div class="industry-card">
+                    <div class="industry-photo" style="background-image: url('images/Isolamento Térmico.png');"></div>
+                    <div class="industry-icon"><i class="fas fa-temperature-high"></i></div>
+                    <h4>Projecto de Isolamento Térmico</h4>
+                    <div class="industry-price">Planta de Amido - Maragra</div>
+                    <p>Isolamento térmico industrial para otimização de processos e eficiência energética</p>
+                    <div class="industry-schedule">
+                        <i class="fas fa-check-circle"></i> Solução personalizada
+                    </div>
+                </div>
+
+                <!-- INDÚSTRIA 3 -->
+                <div class="industry-card">
+                    <div class="industry-photo" style="background-image: url('images/Montagem de linha de processamento de Arroz.png');"></div>
+                    <div class="industry-icon"><i class="fas fa-warehouse"></i></div>
+                    <h4>Montagem de linha de processamento de Arroz</h4>
+                    <div class="industry-price">Zambézia e HICEP-Gaza</div>
+                    <p>Instalação de linhas completas em Quelimane, Nicuadala, Namacurra, Maganja da Costa e Gaza</p>
+                    <div class="industry-schedule">
+                        <i class="fas fa-check-circle"></i> Agroindústria
+                    </div>
+                </div>
+
+                <!-- INDÚSTRIA 4 -->
+                <div class="industry-card">
+                    <div class="industry-photo" style="background-image: url('images/Máquinas de processamento de mandioca.png');"></div>
+                    <div class="industry-icon"><i class="fas fa-industry"></i></div>
+                    <h4>Máquinas de processamento de mandioca</h4>
+                    <div class="industry-price">Equipamentos Agroindustriais</div>
+                    <p>Fabricação e montagem de equipamentos para processamento de mandioca</p>
+                    <div class="industry-schedule">
+                        <i class="fas fa-check-circle"></i> Tecnologia local
+                    </div>
+                </div>
+
+                <!-- INDÚSTRIA 5 -->
+                <div class="industry-card">
+                    <div class="industry-photo" style="background-image: url('images/Malas de ferramentas e Barras de rolamento.png');"></div>
+                    <div class="industry-icon"><i class="fas fa-tools"></i></div>
+                    <h4>Malas de ferramentas e Barras de rolamento Galvanizadas</h4>
+                    <div class="industry-price">EDM - Electricidade de Moçambique</div>
+                    <p>Fornecimento de equipamentos e ferramentas especializadas para o sector energético</p>
+                    <div class="industry-schedule">
+                        <i class="fas fa-check-circle"></i> Normas técnicas
+                    </div>
+                </div>
+
+                <!-- INDÚSTRIA 6 -->
+                <div class="industry-card">
+                    <div class="industry-photo" style="background-image: url('images/Reabilitacao de maternidade de CS.png');"></div>
+                    <div class="industry-icon"><i class="fas fa-hospital"></i></div>
+                    <h4>Reabilitação de infraestruturas de saúde</h4>
+                    <div class="industry-price">CS Mavial - Zavala</div>
+                    <p>Reabilitação de maternidade e sanitários (Matola-Rio, BIC, Machava-Mahotas)</p>
+                    <div class="industry-schedule">
+                        <i class="fas fa-check-circle"></i> Construção civil
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== RODAPÉ ===== -->
+            <div class="offer-note">
+                <i class="fas fa-award"></i> +15 anos de experiência no mercado industrial • Projectos entregues com excelência e pontualidade<br>
+                <i class="fas fa-users"></i> Equipa técnica altamente qualificada e certificada
+            </div>
+
+            <!-- ===== BOTÃO CTA ===== -->
+            <div style="margin-top: 1.5rem;">
+                <button class="bunk-cta-btn">
+                    <i class="fas fa-arrow-right"></i> Solicitar Projecto
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SEÇÃO CLIENTES E PARCEIROS ==================== -->
+<section id="honra" class="honor-bunk-section">
+    <div class="honor-container">
+        <div class="honor-card-wrapper">
+            <div class="honor-badge"><i class="fas fa-handshake"></i> Confiança e Parceria</div>
+            <h2 class="honor-title">Nossos <span style="color: #FFE952;">Clientes & Parceiros</span></h2>
+            <p class="honor-subtitle">Empresas e instituições que confiam na nossa excelência em engenharia e soluções industriais</p>
+            
+            <div class="honor-grid">
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/cimentos.jpg');"></div></div>
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/GIM.png');"></div></div>
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/pumalogo.png');"></div></div>
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/edm.png');"></div></div>
+            </div>
+            <div class="honor-grid">
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/merecindustries.png');"></div></div>
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/fao.png');"></div></div>
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/unicef.png');"></div></div>
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/cimmatola.png');"></div></div>
+            </div>
+            <div class="honor-grid">
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/dtgroup.png');"></div></div>
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/unido.jpg');"></div></div>
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/za.png');"></div></div>
+                <div class="honor-card"><div class="honor-photo" style="background-image: url('images/MARAGRA.jpg');"></div></div>
+            </div>
+            
+            <div class="honor-footer">
+                <button class="honor-cta-btn"><i class="fas fa-building"></i> Faça parte desta rede</button>
+                <p class="honor-note"><i class="fas fa-award"></i> +15 anos de parcerias de sucesso com empresas líderes em Moçambique</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SEÇÃO CONTACTOS ==================== -->
+<!-- ==================== SEÇÃO CONTACTOS ==================== -->
+<!-- ==================== SEÇÃO CONTACTOS ==================== -->
+<!-- ==================== SEÇÃO CONTACTOS ==================== -->
+<!-- ==================== SEÇÃO CONTACTOS ==================== -->
+<section id="contactos" class="contact-bunk-section">
+    <div class="contact-container">
+        <div class="contact-card-wrapper">
+            <div class="contact-badge">
+                <i class="fas fa-comment-dots"></i> Fale Connosco
+            </div>
+            <h2 class="contact-title">
+                Entre em <span>Contacto</span>
+            </h2>
+            <p class="contact-subtitle">
+                Estamos prontos para atender as suas necessidades em engenharia, consultoria e soluções industriais.
+            </p>
+            
+            <div class="contact-grid">
+                <!-- ===== INFORMAÇÕES DE CONTACTO ===== -->
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Nossa Localização</h4>
+                            <p>Av. De Moçambique, Km 11.5 - Zimpeto, Maputo - Moçambique</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Números de Telefone</h4>
+                            <p>(+258) 84 239 7504<br>(+258) 84 477 5449</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Endereço de Email</h4>
+                            <p>
+                                <a href="mailto:eicldaco@eic-lda.co.mz">
+                                    eicldaco@eic-lda.co.mz
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <p>
+                                <a href="http://www.eic-lda.co.mz" target="_blank">
+                                    www.eic-lda.co.mz
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda - Sexta: 8h00 - 17h00<br>Sábado: 8h00 - 12h00 (apenas emergências)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ===== FORMULÁRIO DE CONTACTO ===== -->
+                <div class="contact-form">
+                    <h3>
+                        <i class="fas fa-paper-plane"></i> Envie-nos uma Mensagem
+                    </h3>
+                    
+                    <form action="enviar.php" method="POST">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Nome Completo</label>
+                            <input type="text" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i> Endereço de Email</label>
+                            <input type="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-phone"></i> Número de Telefone</label>
+                            <input type="tel" name="telefone" placeholder="+258 XX XXX XXXX" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-tag"></i> Assunto</label>
+                            <select name="assunto" required>
+                                <option value="">Selecione o assunto</option>
+                                <option value="Desenho Estrutural">Desenho Estrutural</option>
+                                <option value="Manutenção Industrial">Manutenção Industrial</option>
+                                <option value="Fabrico de Estruturas">Fabrico de Estruturas</option>
+                                <option value="Construção Civil">Construção Civil</option>
+                                <option value="Agricultura">Agricultura</option>
+                                <option value="Serviços Feitos">Serviços Feitos</option>
+                                <option value="Consultoria">Consultoria</option>
+                                <option value="Orçamento">Solicitar Orçamento</option>
+                                <option value="Informações">Informações sobre Serviços</option>
+                                <option value="Parcerias">Parcerias</option>
+                                <option value="Recrutamento">Recrutamento</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-comment"></i> Sua Mensagem</label>
+                            <textarea name="mensagem" rows="5" placeholder="Descreva a sua solicitação ou dúvida..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="contact-submit-btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- ===== MAPA ===== -->
+            <div class="contact-map">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <div>
+                        <strong>Av. De Moçambique, Km 11.5 - Zimpeto</strong>
+                        <p>📍 Localizados num ponto estratégico, de fácil acesso para toda a região metropolitana de Maputo</p>
+                        <a href="https://www.google.com/maps/place/EIC,+lda/@-25.8567462,32.5640321,21z/data=!4m6!3m5!1s0x1ee691002affa95b:0x5ced3a4caa18f51b!8m2!3d-25.8567462!4d32.5640321!16s%2Fg%2F11ntw153z_?entry=ttu" 
+                           target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Ver no Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================== WHATSAPP ==================== -->
+<div class="whatsapp-float" id="whatsappFloat">
+    <div class="whatsapp-tooltip"><i class="fas fa-comment-dots"></i><span>📱 Fale com o nosso comercial! 💬</span></div>
+    <a href="https://wa.me/message/JNSUV6PHP3MOA1" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+
+<!-- ==================== FOOTER ==================== -->
+<!-- ==================== FOOTER ==================== -->
+<!-- ==================== FOOTER ==================== -->
+<!-- ==================== FOOTER ==================== -->
+<!-- ==================== FOOTER ==================== -->
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Coluna 1: Sobre -->
+            <div class="footer-about">
+                <h3>EIC, LDA</h3>
+                <p>Engenharia Industrial e Consultoria, LDA- Prestamos serviços de engenharia com rigor, qualidade, justiça e cumprimento absoluto dos prazos estabelecidos.</p>
+            </div>
+            
+            <!-- Coluna 2: Redes Sociais -->
+            <div class="footer-links">
+                <h4>Redes Sociais</h4>
+                <div class="social-links-footer">
+                    <a href="https://www.facebook.com/profile.php?id=61592017178721&mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="social-icon-footer">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/eic_lda/" target="_blank" class="social-icon-footer">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://wa.me/message/JNSUV6PHP3MOA1" target="_blank" class="social-icon-footer">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/eic-lda-245866409" target="_blank" class="social-icon-footer">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Coluna 3: Serviços -->
+            <div class="footer-links">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#manutencao-industrial">Manutenção Industrial</a></li>
+                    <li><a href="#desenho-estrutural">Desenho Estrutural</a></li>
+                    <li><a href="#fabrico-estruturas">Fabrico de Estruturas</a></li>
+                    <li><a href="#construcao-civil">Construção Civil</a></li>
+                    <li><a href="#agricultura">Agricultura</a></li>
+                </ul>
+            </div>
+            
+            <!-- Coluna 4: Localização - EIC, LDA -->
+            <div class="footer-links">
+                <h4>Localização</h4>
+                <a href="https://www.google.com/maps/place/EIC,+lda/@-25.8567462,32.5640321,21z/data=!4m6!3m5!1s0x1ee691002affa95b:0x5ced3a4caa18f51b!8m2!3d-25.8567462!4d32.5640321!16s%2Fg%2F11ntw153z_?entry=ttu" 
+                   target="_blank" 
+                   style="display: block; text-decoration: none;">
+                    <div style="
+                        width: 100%; 
+                        height: 200px; 
+                        background: linear-gradient(135deg, #1a2a3a, #2a3a4a);
+                        border-radius: 8px; 
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px solid #FFB703;
+                        position: relative;
+                        overflow: hidden;
+                    ">
+                        <!-- Mini mapa de fundo -->
+                        <div style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=-25.8567462,32.5640321&zoom=16&size=400x200&markers=color:red%7C-25.8567462,32.5640321&key=AIzaSyDqj7Aeb-6Hh5QyL5Cnq8UjBq9X1LMJh1w');
+                            background-size: cover;
+                            background-position: center;
+                            opacity: 0.3;
+                        "></div>
+                        
+                        <div style="position: relative; z-index: 2; text-align: center;">
+                            <i class="fas fa-map-pin" style="font-size: 50px; color: #FFB703; margin-bottom: 8px;"></i>
+                            <p style="color: #FFB703; font-weight: 700; margin: 0; font-size: 18px;">
+                                EIC, LDA
+                            </p>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 0.8rem; margin-top: 5px;">
+                                <i class="fas fa-external-link-alt" style="font-size: 12px;"></i> Clique para ver no Google Maps
+                            </p>
+                            <p style="color: rgba(255,255,255,0.6); font-size: 0.7rem; margin-top: 3px;">
+                                <i class="fas fa-map-marker-alt" style="color: #FFB703;"></i> 
+                                4HV7+8J3, Maputo, Moçambique
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="copyright">© 2026 SRG Logistica e Servicos, LDA. Todos os direitos reservados.</div>
+        </div>
+    </div>
+</footer>
+<!-- ===== JAVASCRIPT EXTERNO ===== -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

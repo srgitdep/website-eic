@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Enviada - EIC, LDA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .success-box {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 16px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            animation: fadeInUp 0.6s ease;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .success-box .icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        .success-box .icon i {
+            font-size: 40px;
+            color: white;
+        }
+        .success-box h1 {
+            color: #1a1a2e;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .success-box h1 span {
+            color: #AF9C03;
+        }
+        .success-box p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .success-box .highlight {
+            background: #fef5e6;
+            border-left: 4px solid #AF9C03;
+            padding: 12px 18px;
+            margin: 20px 0;
+            text-align: left;
+            border-radius: 4px;
+        }
+        .success-box .highlight p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        .success-box .highlight i {
+            color: #AF9C03;
+            margin-right: 8px;
+        }
+        .success-box .btn {
+            display: inline-block;
+            background: #AF9C03;
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .success-box .btn:hover {
+            background: #8a7a02;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(175, 156, 3, 0.3);
+        }
+        .success-box .btn-outline {
+            background: transparent;
+            color: #AF9C03;
+            border: 2px solid #AF9C03;
+            margin-left: 10px;
+        }
+        .success-box .btn-outline:hover {
+            background: #AF9C03;
+            color: white;
+        }
+        .success-box .social-links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .success-box .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .success-box .social-links a:hover {
+            background: #AF9C03;
+            color: white;
+            transform: translateY(-3px);
+        }
+        @media (max-width: 480px) {
+            .success-box { padding: 30px 20px; }
+            .success-box h1 { font-size: 1.4rem; }
+            .success-box p { font-size: 0.85rem; }
+            .success-box .btn { padding: 12px 25px; font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-box">
+        <div class="icon">
+            <i class="fas fa-check"></i>
+        </div>
+        
+        <h1>Mensagem <span>Enviada!</span></h1>
+        <p>âœ… A sua mensagem foi enviada com sucesso para a EIC, LDA.</p>
+        
+        <div class="highlight">
+            <p><i class="fas fa-clock"></i> Entraremos em contacto consigo dentro de <strong>24h Ãºteis</strong>.</p>
+            <p style="margin-top: 8px;"><i class="fas fa-envelope"></i> Enviamos uma copia da sua mensagem para o seu email.</p>
+        </div>
+        
+        <p style="font-size: 0.9rem; color: #777;">
+            ðŸ“ž Caso prefira, contacte-nos diretamente:<br>
+            <strong>(+258) 84 239 7504</strong> ou <strong>(+258) 84 477 5449</strong>
+        </p>
+        
+        <div>
+            <a href="index.html" class="btn">
+                <i class="fas fa-home"></i> Voltar ao Site
+            </a>
+            <a href="https://wa.me/message/JNSUV6PHP3MOA1" target="_blank" class="btn btn-outline">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61592017178721" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/eic_lda/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/eic-lda-245866409" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</body>
+</html>
