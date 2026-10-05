@@ -1,14 +1,19 @@
 <?php
 // ==================== CONFIGURAÇÕES ====================
-// EMAIL QUE JÁ EXISTE NO SEU CPANEL
-$para = "eicldaco@eic-lda.co.mz";
+$para = "geral@eic-lda.co.mz";          // Email que recebe as mensagens
+$remetente = "geral@eic-lda.co.mz";     // Remetente (tem de ser do próprio domínio)
 $assunto_padrao = "Nova mensagem do site EIC, LDA";
 
+// Função para limpar quebras de linha (evita injecção de cabeçalhos)
+function limpar_linha($texto) {
+    return trim(str_replace(array("\r", "\n", "%0a", "%0d"), '', $texto));
+}
+
 // ==================== PEGAR DADOS DO FORMULÁRIO ====================
-$nome = isset($_POST['nome']) ? trim($_POST['nome']) : '';
-$email = isset($_POST['email']) ? trim($_POST['email']) : '';
-$telefone = isset($_POST['telefone']) ? trim($_POST['telefone']) : '';
-$assunto = isset($_POST['assunto']) ? trim($_POST['assunto']) : 'Sem assunto definido';
+$nome = isset($_POST['nome']) ? limpar_linha($_POST['nome']) : '';
+$email = isset($_POST['email']) ? limpar_linha($_POST['email']) : '';
+$telefone = isset($_POST['telefone']) ? limpar_linha($_POST['telefone']) : '';
+$assunto = isset($_POST['assunto']) ? limpar_linha($_POST['assunto']) : 'Sem assunto definido';
 $mensagem = isset($_POST['mensagem']) ? trim($_POST['mensagem']) : '';
 
 // ==================== VALIDAÇÃO ====================
@@ -66,21 +71,22 @@ if (!empty($erros)) {
 }
 
 // ==================== MONTAR EMAIL ====================
-$assunto_completo = $assunto_padrao . " - " . $assunto;
+// Assunto codificado em UTF-8 (para acentos funcionarem)
+$assunto_completo = "=?UTF-8?B?" . base64_encode($assunto_padrao . " - " . $assunto) . "?=";
 
 $corpo_email = "
 ===========================================
        NOVA MENSAGEM DO SITE EIC, LDA
 ===========================================
 
-📌 DADOS DO CLIENTE:
+DADOS DO CLIENTE:
 ------------------------------------------------
 Nome:        $nome
 Email:       $email
 Telefone:    $telefone
 Assunto:     $assunto
 
-📝 MENSAGEM:
+MENSAGEM:
 ------------------------------------------------
 $mensagem
 
@@ -92,46 +98,46 @@ IP: " . $_SERVER['REMOTE_ADDR'] . "
 ";
 
 // ==================== HEADERS ====================
+// From = email do próprio domínio | Reply-To = email do visitante
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/plain; charset=utf-8\r\n";
-$headers .= "From: " . $email . "\r\n";
+$headers .= "From: Site EIC <" . $remetente . ">\r\n";
 $headers .= "Reply-To: " . $email . "\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-$headers .= "X-Priority: 1\r\n";
 
 // ==================== ENVIAR EMAIL ====================
-if (mail($para, $assunto_completo, $corpo_email, $headers)) {
+if (mail($para, $assunto_completo, $corpo_email, $headers, "-f" . $remetente)) {
     // ===== ENVIAR CÓPIA PARA O CLIENTE =====
-    $assunto_cliente = "EIC, LDA - Confirmamos o recebimento da sua mensagem";
+    $assunto_cliente = "=?UTF-8?B?" . base64_encode("EIC, LDA - Confirmamos o recebimento da sua mensagem") . "?=";
     $corpo_cliente = "
 Olá $nome,
 
 Recebemos a sua mensagem com sucesso! Agradecemos o seu contacto.
 
-🔹 Dados da sua mensagem:
+Dados da sua mensagem:
 ------------------------------------------------
 Assunto: $assunto
 Mensagem: $mensagem
 ------------------------------------------------
 
-✅ Entraremos em contacto consigo o mais breve possível (dentro de 24h úteis).
+Entraremos em contacto consigo o mais breve possível (dentro de 24h úteis).
 
-📞 Caso prefira, pode nos contactar diretamente:
+Caso prefira, pode contactar-nos directamente:
    Telefone: (+258) 84 239 7504 ou (+258) 84 477 5449
-   Email: eicldaco@eic-lda.co.mz
+   Email: geral@eic-lda.co.mz
 
 Atenciosamente,
-Equipe EIC, LDA
+Equipa EIC, LDA
 www.eic-lda.co.mz
 ";
-    
+
     $headers_cliente = "MIME-Version: 1.0\r\n";
     $headers_cliente .= "Content-type: text/plain; charset=utf-8\r\n";
-    $headers_cliente .= "From: eicldaco@eic-lda.co.mz\r\n";
-    $headers_cliente .= "Reply-To: eicldaco@eic-lda.co.mz\r\n";
-    
-    @mail($email, $assunto_cliente, $corpo_cliente, $headers_cliente);
-    
+    $headers_cliente .= "From: EIC, LDA <" . $remetente . ">\r\n";
+    $headers_cliente .= "Reply-To: " . $remetente . "\r\n";
+
+    @mail($email, $assunto_cliente, $corpo_cliente, $headers_cliente, "-f" . $remetente);
+
     // ===== REDIRECIONAR PARA PÁGINA DE SUCESSO =====
     header("Location: obrigado.html");
     exit;
